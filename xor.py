@@ -26,7 +26,7 @@ outputs = np.array([[0], [1], [1], [0]])
 # Initialize weights
 np.random.seed(1)
 input_layer_neurons = 2
-hidden_layer_neurons = 2
+hidden_layer_neurons = 4
 output_neurons = 1
 
 weights_input_hidden = np.random.uniform(size=(input_layer_neurons, hidden_layer_neurons))
