@@ -26,15 +26,15 @@ outputs = np.array([[1], [0], [0], [1]])
 # Initialize weights
 np.random.seed(1)
 input_layer_neurons = 2
-hidden_layer_neurons = 2
+hidden_layer_neurons = 4
 output_neurons = 1
 
 weights_input_hidden = np.random.uniform(size=(input_layer_neurons, hidden_layer_neurons))
 weights_hidden_output = np.random.uniform(size=(hidden_layer_neurons, output_neurons))
 
 # Training parameters
-learning_rate = 0.1
-epochs = int(input("How many epochs (50000 is normal)? "))
+learning_rate = 0.5
+epochs = int(input("How many epochs? "))
 
 # Lists to store error values for plotting
 error_list = []

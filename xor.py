@@ -34,7 +34,7 @@ weights_hidden_output = np.random.uniform(size=(hidden_layer_neurons, output_neu
 
 # Training parameters
 learning_rate = 0.1
-epochs = int(input("How many epochs (50000 is normal)? "))
+epochs = int(input("How many epochs? "))
 
 # Lists to store error values for plotting
 error_list = []

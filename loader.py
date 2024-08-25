@@ -5,8 +5,9 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 # Load the saved weights
-weights_input_hidden = np.load('weights_input_hidden.npy')
-weights_hidden_output = np.load('weights_hidden_output.npy')
+type = input("What type of network are we loading? ")
+weights_input_hidden = np.load(type + '_weights_input_hidden.npy')
+weights_hidden_output = np.load(type + '_weights_hidden_output.npy')
 
 # Prediction function
 def predict(inputs):
