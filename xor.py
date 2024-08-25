@@ -33,7 +33,7 @@ weights_input_hidden = np.random.uniform(size=(input_layer_neurons, hidden_layer
 weights_hidden_output = np.random.uniform(size=(hidden_layer_neurons, output_neurons))
 
 # Training parameters
-learning_rate = 0.1
+learning_rate = 0.5
 epochs = int(input("How many epochs? "))
 
 # Lists to store error values for plotting
@@ -65,8 +65,8 @@ for epoch in range(epochs):
         print(f"Epoch {epoch}: Mean Error = {mean_error}")
 
 # Save the weights after training
-np.save('weights_input_hidden.npy', weights_input_hidden)
-np.save('weights_hidden_output.npy', weights_hidden_output)
+np.save('xor_weights_input_hidden.npy', weights_input_hidden)
+np.save('xor_weights_hidden_output.npy', weights_hidden_output)
 
 print("Training complete. Weights saved.")
 
@@ -77,5 +77,5 @@ plt.title('Error vs. Epochs')
 plt.xlabel('Epochs')
 plt.ylabel('Mean Absolute Error')
 plt.grid(True)
-plt.savefig('error_vs_epochs.png')
+plt.savefig('xor_error_vs_epochs.png')
 plt.show()
